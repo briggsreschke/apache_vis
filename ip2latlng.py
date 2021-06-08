@@ -41,7 +41,7 @@ def index(hosts, ip):
 parser = LogParser(apachelogs.COMBINED)
 hosts = []
 # ipstack access key
-geo_lookup = GeoLookup("65eb4be1a0057db9222eb6e972e2051e")
+geo_lookup = GeoLookup("API Key")
 
 for rec in log_records:
     entry = parser.parse(rec)
