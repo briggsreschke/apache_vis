@@ -1,4 +1,9 @@
 
+# Parse Godaddy Apache Logs and reverse geocode IP addresses
+# apachelogs to parse
+# ipstack to reverse geocode
+# Keep counts of dupicate IP addresses
+
 import re
 import json
 from ipstack import GeoLookup
