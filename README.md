@@ -1,2 +1,2 @@
-# Scripts to look at apache log files 
+# Do stuff with apache log files 
 In progress
