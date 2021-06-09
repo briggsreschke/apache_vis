@@ -50,10 +50,8 @@ for rec in log_records:
     if not search(hosts, ip):
         # new dict to add to hosts list
         location = geo_lookup.get_location(ip)
-        dic = {}
-        dic = location
-        dic['count'] = 1
-        hosts.append(dic)
+        location['count'] = 1
+        hosts.append(location)
     else:
         idx = index(hosts, ip)
         hosts[idx]['count'] += 1
