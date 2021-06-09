@@ -58,5 +58,6 @@ for rec in log_records:
         idx = index(hosts, ip)
         hosts[idx]['count'] += 1
 
+# Write data out as an list of dicts  
 with open("access_log.json", 'w') as outfile:
     outfile.write(json.dumps(hosts))
