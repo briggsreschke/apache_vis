@@ -59,3 +59,13 @@ for rec in log_records:
 # Write data out as an list of dicts  
 with open("access_log.json", 'w') as outfile:
     outfile.write(json.dumps(hosts))
+    
+    
+    
+ '''
+ Sample output
+ [
+    {'ip': '141.94.20.52', 'type': 'ipv4', 'continent_code': 'EU', 'continent_name': 'Europe', 'country_code': 'DE', 'country_name': 'Germany', 'region_code': None, 'region_name': None, 'city': None, 'zip': None, 'latitude': 51, 'longitude': 9, 'location': {'geoname_id': None, 'capital': 'Berlin', 'languages': [{'code': 'de', 'name': 'German', 'native': 'Deutsch'}], 'country_flag': 'http://assets.ipstack.com/flags/de.svg', 'country_flag_emoji': '🇩🇪', 'country_flag_emoji_unicode': 'U+1F1E9 U+1F1EA', 'calling_code': '49', 'is_eu': True}, 'count': 1}, 
+    {'ip': '54.191.137.17', 'type': 'ipv4', 'continent_code': 'NA', 'continent_name': 'North America', 'country_code': 'US', 'country_name': 'United States', 'region_code': 'OR', 'region_name': 'Oregon', 'city': 'Boardman', 'zip': '97818', 'latitude': 45.73722839355469, 'longitude': -119.81143188476562, 'location': {'geoname_id': None, 'capital': 'Washington D.C.', 'languages': [{'code': 'en', 'name': 'English', 'native': 'English'}], 'country_flag': 'http://assets.ipstack.com/flags/us.svg', 'country_flag_emoji': '🇺🇸', 'country_flag_emoji_unicode': 'U+1F1FA U+1F1F8', 'calling_code': '1', 'is_eu': False}, 'count': 2}
+]
+'''
