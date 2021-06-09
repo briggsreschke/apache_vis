@@ -38,6 +38,8 @@ def index(hosts, ip):
 
 
 # Parse log records and take the IP and increment count for dups
+
+
 parser = LogParser(apachelogs.COMBINED)
 hosts = []
 # ipstack access key
