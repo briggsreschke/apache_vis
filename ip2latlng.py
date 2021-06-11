@@ -33,8 +33,7 @@ def search(hosts, ip):
 
 
 def index(hosts, ip):
-    return next((index for (index, d) in enumerate(
-        hosts) if d['ip'] == ip), None)
+    return next((index for (index, d) in enumerate(hosts) if d['ip'] == ip), None)
 
 
 # Parse log records and take the IP and increment count for dups
